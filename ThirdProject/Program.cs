@@ -50,14 +50,7 @@ namespace ThirdProject
 
             Console.WriteLine("Enter your user type (Regular, Premium, Guest): ");
             string userType = Console.ReadLine()?.Trim();
-
-            //User user = userType?.ToLower() switch
-            //{
-            //    "Regular" => new RegularUser(),
-            //    "Premium" => new RegularUser(),
-            //    "Guest" => new RegularUser(),
-            //    _ => throw new ArgumentException("Invalid user type")
-            //};
+   
 
             User user = userType?.ToLower() switch
             {
